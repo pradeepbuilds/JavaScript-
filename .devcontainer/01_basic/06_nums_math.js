@@ -38,3 +38,4 @@ console.log(num.toLocaleString('en-IN'));
 let randomNumber =Math.floor(Math.random()*(max-min +1)+min);
 
 console.log(randomNumber);
+//uiii
