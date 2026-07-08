@@ -4,13 +4,27 @@
 
 // observation
 
-//  numbers in string will get easily convert 
+//  numbers in string will get easily convert but if all the string means character are persent then it will not convert and return NaN(not a Number);
 //but number+ string = NAN (not a number ) type will be number 
 
 //null get converted to 0;type will be number 
 //undefined -> get converted into nan(not a number ) type will be number 
 //NaN get convert to NaN same value
 
+// // Type of NaN is "number" (strange but true):
+// It is a special value in JavaScript that represents something that cannot be converted into a valid number.
+
+// javascript
+// typeof NaN; // "number"
+// NaN is not equal to anything, even itself:
+
+// javascript
+// NaN === NaN; // false
+// To check if a value is NaN, use:
+
+// javascript
+// isNaN(value); // true if value is NaN
+// Number.isNaN(value); // safer check
 
 //  let age =NaN;
 
@@ -23,6 +37,7 @@
 
 
 // conert to boolean
+
 //observation 
 
 //0 convert -> false
