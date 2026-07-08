@@ -1,5 +1,5 @@
-//function is that container which increse the reusablity of code and that packes the code  in on one packet and acess 
-
+//function is that container which increse the reusablity of code and that packes the code   in on one packet and acess 
+ 
 
 //synax of function making and calling 
 // function sayMyName(){

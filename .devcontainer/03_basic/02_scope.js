@@ -18,7 +18,7 @@
 // console.log(c);
 //check how c is accesible outside the scope so not to use that 
 
-//concept of closure is parent can give but can't access is property in simple words;
+//concept  of closure is parent can give but can't access is property in simple words;
 
 // nested scope 
 

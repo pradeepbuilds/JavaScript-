@@ -60,7 +60,7 @@ return;
 
     //implict return 
 
-    //it means no need to write the return if we are wrting all in one line and inside ()
+    //it  means no need to write the return if we are wrting all in one line and inside ()
 
     const addTwo =(num1,num2)=>num1+num2 ;//these also correct no error 
     const addone=(num1,num2)=>({})//inside same you can return the object ,array all thing but these () bracket are needed ok and no need to write return keyword speicifcally 
