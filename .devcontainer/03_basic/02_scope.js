@@ -48,4 +48,11 @@ const addTwo =function name(num){
 }
 //these declaration can be called after only declare not before ok and the  variable we are stroing is called as experssion 
 
-//concept of hositing 
+//concept of hositing You can use a function before you write it.
+
+But for variables, only the declaration is hoisted, not the value.
+
+ Variables
+var → declaration is hoisted, but value is not.
+
+let and const → hoisted but kept in a “temporal dead zone” until they are assigned, so using them before assignment gives an error.
