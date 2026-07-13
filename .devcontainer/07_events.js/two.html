@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    
+
+    <script>
+    
+    /*
+
+these the info about javascript 
+it is synchrose and singlethread by defaault
+
+executation context execute the one line of code at time  
+
+
+each operation waits for last operation to complete 
+
+blocking code := block the flow of exeutation  
+read file is sync 
+
+non block - does not block the execuation read file asyncs 
+
+
+
+JavaScript is synchronous by default
+
+It runs one task at a time, line by line.
+
+Nothing else executes until the current task finishes.
+
+Web APIs make async possible
+
+When you use things like setTimeout, fetch, or DOM events, the browser (Web API) takes over.
+
+These tasks run in the background, outside the main JS engine.
+
+Callback registration
+
+Once the Web API finishes (timer ends, data arrives, event occurs), it registers a callback.
+
+That callback is sent to a queue (waiting line).
+
+Task Queue (Callback Queue)
+
+Normal async tasks like setTimeout or setInterval go here.
+
+They wait until the call stack is empty.
+
+Microtask Queue (High Priority)
+
+Promises (.then, async/await) and MutationObservers go into a special high‑priority queue.
+
+The event loop always checks this queue before the normal task queue.
+
+That’s why Promise.then() runs before setTimeout.
+
+Event Loop
+
+The event loop is the traffic controller.
+
+It constantly checks:
+
+“Is the call stack empty?”
+
+If yes → it moves tasks from the microtask queue first, then from the task queue, into the stack for execution.
+
+
+
+    */
+
+
+
+
+        //setTimeout() these the method in which it will run after the 2 sec and stop automatically run only once  
+        //handler are the function without name
+        // setTimeout(()=>{console.log("These is my name ")},1000);
+        //     setTimeout(namePrint,4000);
+        // function namePrint(){
+        //     console.log("pradeep")
+        // }
+        // if we want to stop the settimeout before execute clearTimeout() same like 
+
+
+        //setInterval runs like loop after that paritcular time 
+        //setInterval(()=>{},1000);same can pass the refernce ;
+        // to stop the refernce clearInterval();
+
+
+
+    </script>
+</body>
+</html>
