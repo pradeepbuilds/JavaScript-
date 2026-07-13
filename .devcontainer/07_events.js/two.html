@@ -69,7 +69,17 @@ It constantly checks:
 
 If yes → it moves tasks from the microtask queue first, then from the task queue, into the stack for execution.
 
+JavaScript itself is synchronous → one task at a time, line by line.
 
+Async doesn’t mean “always sent to Web APIs.”
+
+Many async tasks do go through Web APIs (like setTimeout, fetch, DOM events).
+
+But some async tasks are handled differently:
+
+Promises / async‑await → they don’t go to Web APIs, they go straight into the microtask queue (higher priority).
+
+MutationObserver → also microtask queue.
 
     */
 
