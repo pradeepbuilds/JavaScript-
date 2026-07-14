@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pradeep</title>
+</head>
+<body>
+     0	UNSENT	Client has been created. open() not called yet.
+1	OPENED	open() has been called.
+2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+3	LOADING	Downloading; responseText holds partial data.
+4	DONE	The operation is complete.
+
+<script>
+/* 
+json formatter is used format the api data 
+
+in old time the api request used to be 
+ajax=asynchronus javascript and xml 
+xml http method 
+
+https://api.github.com/users/pradeepbuilds my github api
+
+
+
+
+*/
+
+
+//let try the old way
+
+const requestold=new XMLHttpRequest();
+const requrl='https://api.github.com/users/pradeepbuilds';
+requestold.open('get',requrl);//these send request 
+
+requestold.send();
+
+
+//understand these will continously monitor the changes of state 
+requestold.onreadystatechange=function(){
+  
+
+if(requestold.readyState===4 && requestold.status===200){
+  const data=JSON.parse(requestold.responseText);
+  console.log(data);
+}
+}
+
+//most of time response comes in string format  so we need to parse it json.parse 
+
+//v8 engine js is written in c+= wrap inside the cover 
+//console is  debugg tool 
+
+
+
+
+</script>
+
+</body>
+</html>
